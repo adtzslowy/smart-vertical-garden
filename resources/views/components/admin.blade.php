@@ -34,6 +34,7 @@
   <script src="{{ url('src') }}/assets/libs/apexcharts/dist/apexcharts.min.js"></script>
   <script src="{{ url('src') }}/assets/libs/simplebar/dist/simplebar.js"></script>
   <script src="{{ url('src') }}/assets/js/dashboard.js"></script>
+  @stack('scripts')
 </body>
 
 </html>
