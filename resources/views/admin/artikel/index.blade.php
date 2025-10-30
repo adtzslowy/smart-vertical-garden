@@ -29,6 +29,7 @@
                                 <td class="text-justify text-truncate"
                                     style="max-width: 100px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                                     {{ strip_tags(string: $artikel['deskripsi']) }}</td>
+<<<<<<< HEAD
                                 <td class="d-flex justify-contect-center gap-1">
                                     <a href="{{ url('admin/artikel/show', $artikel['id']) }}"
                                         class= "btn btn-sm btn-info"> <i class ="ti ti-eye"></i>
@@ -36,6 +37,15 @@
                                             class="btn btn-sm btn-warning"><i class="ti ti-edit"></i>
                                         </a>
                                         <form action="{{ url('admin.artikel.destroy', $artikel['id']) }}"
+=======
+                                <td class="d-flex justify-content-center gap-1">
+                                    <a href="{{ url('admin/artikel/show', $artikel['id']) }}"
+                                        class= "btn btn-sm btn-info"> <i class ="ti ti-eye"></i>
+                                        <a href="{{ url('admin/artikel/edit', $artikel['id']) }}"
+                                            class="btn btn-sm btn-warning"><i class="ti ti-edit"></i>
+                                        </a>
+                                        <form action="{{ url('admin/artikel/destroy', $artikel['id']) }}"
+>>>>>>> 02b5f9b (added: code)
                                             method="POST" class="d-inline">
                                             @csrf
                                             @method('DELETE')

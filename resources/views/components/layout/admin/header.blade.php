@@ -24,6 +24,7 @@
                         <img src="{{ url('storage/' . Auth::user()->foto_profil) }}" alt="" width="40"
                             height="40" class="rounded-circle">
                     </a>
+<<<<<<< HEAD
                     <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
                         <div class="message-body">
                             <a href="{{ url('admin/profile') }}" class="d-flex align-items-center gap-2 dropdown-item">
@@ -36,6 +37,20 @@
                         </div>
                     </div>
                 </li>
+=======
+                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
+                      <i class="ti ti-mail fs-6"></i>
+                      <p class="mb-0 fs-3">My Account</p>
+                    </a>
+                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
+                      <i class="ti ti-list-check fs-6"></i>
+                      <p class="mb-0 fs-3">My Task</p>
+                    </a>
+                    <a href="{{ url('logout') }}" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
+                  </div>
+                </div>
+              </li>
+>>>>>>> 02b5f9b (added: code)
             </ul>
         </div>
     </nav>

@@ -16,9 +16,9 @@ class NotAuth
     public function handle(Request $request, Closure $next): Response
     {
         if (!any_guard_authenticated(['admin'])) {
-            return redirect('/login')->with('error', "You've must be logged in to access this page.");
+            return redirect('login')->with('error', "You've must be logged in to access this page.");
         }
-        
+
         return $next($request);
     }
 }
