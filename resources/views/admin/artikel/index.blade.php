@@ -29,13 +29,13 @@
                                 <td class="text-justify text-truncate"
                                     style="max-width: 100px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                                     {{ strip_tags(string: $artikel['deskripsi']) }}</td>
-                                <td>
+                                <td class="d-flex justify-contect-center gap-1">
                                     <a href="{{ url('admin/artikel/show', $artikel['id']) }}"
                                         class= "btn btn-sm btn-info"> <i class ="ti ti-eye"></i>
-                                        <a href="{{ route('admin.artikel.edit', $artikel['id']) }}"
+                                        <a href="{{ url('admin.artikel.edit', $artikel['id']) }}"
                                             class="btn btn-sm btn-warning"><i class="ti ti-edit"></i>
                                         </a>
-                                        <form action="{{ route('admin.artikel.destroy', $artikel['id']) }}"
+                                        <form action="{{ url('admin.artikel.destroy', $artikel['id']) }}"
                                             method="POST" class="d-inline">
                                             @csrf
                                             @method('DELETE')

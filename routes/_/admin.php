@@ -13,6 +13,9 @@ use App\Http\Controllers\Admin\DashboardController;
 */
 
 Route::get('/', action: [DashboardController::class, 'index']);
+Route::get('profile', [DashboardController::class, 'profil']);
+Route::get('profile/edit/{id}', [DashboardController::class, 'edit']);
+Route::put('profile/{id}', [DashboardController::class, 'update']);
 
 // Artikel CRUD
 Route::prefix('artikel')->group(function () {

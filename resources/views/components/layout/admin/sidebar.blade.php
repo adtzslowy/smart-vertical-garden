@@ -5,7 +5,7 @@
     <div class="brand-logo d-flex align-items-center justify-content-between">
       <a href="/admin" class="text-nowrap logo-img d-flex align-items-center">
         <img src="{{ url('src') }}/assets/images/logos/favicon.png" width="40" alt="Logo" />
-        <span class="ms-2 fw-bold text-primary">Smart Garden</span>
+        <span class="ms-2 fw-bold text-primary" style="font-size: 17px;">Smart Vertical Garden</span>
       </a>
       <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
         <i class="ti ti-x fs-8"></i>
